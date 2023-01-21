@@ -1,0 +1,51 @@
+//<Form>================================================================================
+// .form {
+//   &__row {
+//   }
+//   &__column {
+//   }
+//   &__line {
+//   }
+//   &__input {
+//   }
+//   &__button {
+//   }
+//   &__error {
+//   }
+// }
+//</Form>===============================================================================
+//<Buttons (a.btn+tab>================================================================================
+.btn {
+  background-color: #ff6464;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 47px;
+  font-weight: 500;
+  color: #fff;
+  font-size: 20px;
+  line-height: calc(29 / 20) * 100%;
+  padding: 0px 20px;
+  transition: background-color 0.3s ease 0s;
+  @media (min-width: 992px) {
+    &:hover {
+      background-color: #bb4949;
+    }
+  }
+  &._fw {
+    width: 100%;
+  }
+}
+//</Buttons (a.btn+tab>===============================================================================
+
+//<Select (sel+tab)>================================================================================
+.select {
+  position: relative;
+  &__item {
+    position: relative;
+  }
+}
+//</Select (sel+tab)>===============================================================================
+//!Дорабатываем (у Жеки еще много чего внизу)
