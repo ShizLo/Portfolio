@@ -6,8 +6,13 @@
 @import "icons";
 //</Иконочные шрифты>===============================================================================
 
+//<Подключаем шрифты>================================================================================
+//&subset=cyrillic-ext
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap&subset=cyrillic-ext");
+//</Подключаем шрифты>===============================================================================
+
 //<Шрифт по умолчанию>================================================================================
-$fontFamily: "";
+$fontFamily: "Heebo", sans-serif;
 //</Шрифт по умолчанию>===============================================================================
 
 //<Переменные>================================================================================
@@ -25,6 +30,7 @@ $md4: 479.98px;
 body {
   color: #21243d;
   font-size: 14px;
+  font-family: $fontFamily;
   &._lock {
     overflow: hidden;
   }
@@ -61,6 +67,7 @@ body {
 @import "forms";
 @import "ui";
 @import "works";
+@import "footer";
 
 .page {
   padding: 90px 0px 0px 0px;
@@ -77,5 +84,14 @@ body {
   align-items: center;
   // .social__item
   &__item {
+    transition: color 0.3s ease 0s;
+    margin: 0px 17px;
+    font-size: 30px;
+    color: inherit;
+    @media (min-width: $md2) {
+      &:hover {
+        color: #ff6464;
+      }
+    }
   }
 }

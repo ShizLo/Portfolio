@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;
+
+500;700;900&display=swap&subset=cyrillic-ext");
 @font-face {
   font-family: Silkscreen;
   font-display: swap;
@@ -12,6 +15,50 @@
   src: url("../fonts/Silkscreen-Regular.woff2") format("woff2"), url("../fonts/Silkscreen-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: icon;
+  font-display: swap;
+  src: url("../fonts/icon.woff2") format("woff2"), url("../fonts/icon.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icon";
+  src: url("fonts/icon.eot?1f8kqb");
+  src: url("fonts/icon.eot?1f8kqb#iefix") format("embedded-opentype"), url("fonts/icon.ttf?1f8kqb") format("truetype"), url("fonts/icon.woff?1f8kqb") format("woff"), url("fonts/icon.svg?1f8kqb#icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-google-plus2:before {
+  content: "\ea8c";
+}
+
+.icon-telegram:before {
+  content: "\ea95";
+}
+
+.icon-vk:before {
+  content: "\ea98";
 }
 
 /* Box sizing rules */
@@ -95,6 +142,7 @@ select {
 body {
   color: #21243d;
   font-size: 14px;
+  font-family: "Heebo", sans-serif;
 }
 
 body._lock {
@@ -453,6 +501,15 @@ picture {
   margin: 0 0 0 25px;
 }
 
+.footer {
+  text-align: center;
+  padding: 40px 0px;
+}
+
+.footer__social {
+  margin: 0px 0px 25px 0px;
+}
+
 .page {
   padding: 90px 0px 0px 0px;
   -webkit-box-flex: 1;
@@ -470,6 +527,15 @@ picture {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.social__item {
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+  margin: 0px 17px;
+  font-size: 30px;
+  color: inherit;
 }
 
 @media (min-width: 767.98px) {
@@ -509,6 +575,10 @@ picture {
   }
 
   .recent-post__title:hover {
+    color: #ff6464;
+  }
+
+  .social__item:hover {
     color: #ff6464;
   }
 }
