@@ -60,6 +60,9 @@
     transition: color 0.3s ease 0s;
     text-decoration: none;
     color: #000;
+    &._active {
+      color: #ff6464;
+    }
     @media (min-width: $md2) {
       &:hover {
         color: #ff6464;

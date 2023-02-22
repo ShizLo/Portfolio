@@ -1,6 +1,17 @@
 .works {
+  &__items {
+    padding-bottom: 60px;
+    @media (max-width: $md3) {
+      padding-bottom: 30px;
+    }
+  }
   // .works__item
-
+  &__main-title {
+    margin: 0px 0px 45px 0px;
+    @media (max-width: $md3) {
+      margin: 0px 0px 20px 0px;
+    }
+  }
   &__item {
     padding: 0px 0px 30px 0px;
     margin: 0px 0px 30px 0px;
@@ -47,8 +58,14 @@
     font-weight: 700;
     line-height: calc(44 / 30) * 100%;
     margin: 0 0 15px 0;
+    transition: color 0.3s ease 0s;
     @media (max-width: $md3) {
       font-size: 24px;
+    }
+    @media (min-width: $md2) {
+      &:hover {
+        color: #ff6464;
+      }
     }
   }
 
